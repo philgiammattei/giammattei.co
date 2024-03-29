@@ -4,151 +4,384 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
-:root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
-	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-regular.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-bold.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
+
 body {
-	font-family: 'Atkinson', sans-serif;
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
-	font-size: 20px;
-	line-height: 1.7;
+  background-color: #2a1b3d;
+  color: #fcfbe3;
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+
+  text-align: center;
+  margin: auto;
 }
-main {
-	width: 720px;
-	max-width: calc(100% - 2em);
-	margin: auto;
-	padding: 3em 1em;
+
+p,
+li,
+a {
+  color: #fcfbe3;
+  font-family: "Muli", sans-serif;
+  font-size: 30px;
 }
+
+a:link {
+  text-decoration: none;
+  color: #eb9fc3;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #eb9fc3;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #eb9fc3;
+}
+a:active {
+  text-decoration: underline;
+  color: #eb9fc3;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
-	line-height: 1.2;
-}
-h1 {
-	font-size: 3.052em;
-}
-h2 {
-	font-size: 2.441em;
-}
-h3 {
-	font-size: 1.953em;
-}
-h4 {
-	font-size: 1.563em;
-}
-h5 {
-	font-size: 1.25em;
-}
-strong,
-b {
-	font-weight: 700;
-}
-a {
-	color: var(--accent);
-}
-a:hover {
-	color: var(--accent);
-}
-p {
-	margin-bottom: 1em;
-}
-.prose p {
-	margin-bottom: 2em;
-}
-textarea {
-	width: 100%;
-	font-size: 16px;
-}
-input {
-	font-size: 16px;
-}
-table {
-	width: 100%;
-}
-img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 8px;
-}
-code {
-	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
-	border-radius: 2px;
-}
-pre {
-	padding: 1.5em;
-	border-radius: 8px;
-}
-pre > code {
-	all: unset;
-}
-blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
-	margin: 0px;
-	font-size: 1.333em;
-}
-hr {
-	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
-}
-@media (max-width: 720px) {
-	body {
-		font-size: 18px;
-	}
-	main {
-		padding: 1em;
-	}
+  color: #fcfbe3;
+  font-family: "Play", sans-serif;
+  margin-bottom: 30px;
 }
 
-.sr-only {
-	border: 0;
-	padding: 0;
-	margin: 0;
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-	clip: rect(1px 1px 1px 1px);
-	/* maybe deprecated but we need to support legacy browsers */
-	clip: rect(1px, 1px, 1px, 1px);
-	/* modern browsers, clip-path works inwards from each corner */
-	clip-path: inset(50%);
-	/* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
-	white-space: nowrap;
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 3.5em;
+}
+h3 {
+  font-size: 3em;
+}
+h4,
+h5,
+h6 {
+  font-size: 2.5em;
+}
+
+button {
+  background-image: linear-gradient(to right, #d83f87, rgb(126, 102, 163));
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+button h6 {
+  font-size: 5em;
+  color: #2a1b3d;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+header h1 {
+  font-size: 85px;
+  font-family: "Play", sans-serif;
+  margin: 0;
+}
+
+hr {
+  display: block;
+  background-image: url(../images/waveform.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  border: 0;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+
+nav {
+  width: 90%;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  padding: 20px 20px 10px 20px;
+  background-image: linear-gradient(
+    to right,
+    #2a1b3d 10%,
+    rgb(126, 102, 163) 50%
+  );
+  border-radius: 0 0 15px 15px;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  z-index: 2;
+}
+nav ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  color: #2a1b3d;
+}
+
+nav ul li a:link,
+nav ul li a:hover,
+nav ul li a:visited,
+nav ul li a:active {
+  color: #2a1b3d;
+  font-family: "Muli", sans-serif;
+  font-size: 2em;
+}
+
+em {
+  font-style: normal;
+  color: #bfb3d1;
+}
+footer {
+  margin: 50px auto;
+  display: flex;
+  max-width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
+footer a img {
+  height: 40px;
+  width: 40px;
+}
+form {
+  margin: 0 auto;
+  width: 80%;
+  color: #fcfbe3;
+  font-family: "Play", sans-serif;
+  font-size: 3em;
+}
+form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+form input {
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 30px;
+}
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  height: 100px;
+}
+p {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+/*********CLASS INDICATORS********/
+.col2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.col {
+  max-width: 100%;
+}
+
+.blogheader {
+  display: block;
+}
+
+.intro {
+  display: block;
+  margin: 50px 20px;
+  text-align: center;
+}
+
+.intro h2,
+h3 {
+  margin: 40px;
+}
+.img-content {
+  max-width: 80%;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  border-radius: 10px;
+  z-index: 0;
+}
+.minesweeper-intro p {
+  margin-bottom: 20px;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project {
+  width: 100%;
+  margin: 30px auto 0;
+  position: relative;
+}
+.projectheading {
+  text-align: left;
+}
+
+.project .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.project:hover {
+  .overlay {
+    display: block;
+  }
+}
+.project img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border: 3px solid #b3b6a4;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skillslist {
+  width: 50%;
+  margin: 0 auto 40px;
+}
+.skillslist h4 {
+  margin: 0 0 10px 25px;
+  text-align: left;
+}
+.socialbuttons {
+  display: none;
+}
+
+/***************DESKTOP STYLES*********/
+@media only screen and (min-device-width: 500px) {
+  body {
+    max-width: 1000px;
+  }
+  button h6 {
+    font-size: 2em;
+  }
+  form {
+    font-size: 1em;
+    width: 400px;
+  }
+  header {
+    justify-content: space-between;
+
+    height: 81px;
+  }
+  .profile-img {
+    margin-right: 20px;
+    z-index: 1;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  h4,
+  h5,
+  h6 {
+    font-size: 1em;
+  }
+  header {
+    margin-bottom: 0;
+  }
+  header h1 {
+    font-size: 40px;
+    text-align: left;
+    style: inline;
+  }
+  hr {
+    height: 50px;
+    width: 100%;
+  }
+  nav {
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: -20px;
+    background-image: linear-gradient(to right, rgb(126, 102, 163, #2a1b3d));
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  nav ul li a:link,
+  nav ul li a:hover,
+  nav ul li a:visited,
+  nav ul li a:active {
+    color: #2a1b3d;
+    font-family: "Muli", sans-serif;
+    font-size: 1.5em;
+  }
+  p,
+  li,
+  a {
+    color: #fcfbe3;
+    font-family: "Muli", sans-serif;
+    font-size: 1em;
+  }
+  .col {
+    max-width: 400px;
+  }
+  .img-content {
+    max-width: 500px;
+    margin: 30px auto 30px;
+  }
+  .hamburger {
+    display: none;
+    width: 0;
+  }
+  .header-container {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .projects {
+    display: flex;
+    justify-content: space-between;
+  }
+  .project {
+    max-width: 300px;
+  }
+  .socialbuttons {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+  }
+  .socialbuttons a img {
+    height: 30px;
+  }
 }

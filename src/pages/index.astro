@@ -1,50 +1,81 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <div class="intro">
+    <h2>Hi there! I'm <em>Phil.</em></h2>
+    <hr />
+    <h3>I am a versatile and curious developer and designer.</h3>
+    <a href="contact.html">
+      <button type="button" name="contactbutton">
+        <h6>Let's talk.</h6></button
+      ></a
+    >
+  </div>
+
+  <h2>Projects:</h2>
+  <div class="projects">
+    <div class="project">
+      <div class="overlay"></div>
+      <a href="dicematch.html">
+        <img src="images/dicematch.png" alt="dicematch" />
+      </a>
+      <h3><a href="dijkstras-cart.html">DiceMatch</a></h3>
+    </div>
+    <div class="project">
+      <div class="overlay"></div>
+      <a href="dijkstras-cart.html">
+        <img src="images/dijkstrascart.png" alt="dijkstra's cart" />
+      </a>
+      <h3><a href="dijkstras-cart.html">Dijkstra's Cart</a></h3>
+    </div>
+    <div class="project">
+      <div class="overlay"></div>
+      <a href="kerfcase.html">
+        <img src="images/kerfcase-cover.png" alt="kerfcase" />
+      </a>
+      <h3><a href="kerfcase.html">KerfCase.com</a></h3>
+    </div>
+    <div class="project">
+      <div class="overlay"></div>
+      <a href="minesweeper.html">
+        <img src="images/minesweeper-cover.png" alt="minesweeper" /></a
+      >
+      <h3><a href="minesweeper-project.html">Minesweeper</a></h3>
+    </div>
+    <div class="project">
+      <div class="overlay"></div>
+      <a href="giammattei.html" alt="giammattei.co">
+        <img src="images/giammattei-co-cover.png" alt="giammattei.co" /></a
+      >
+      <h3><a href="giammattei.html" alt="giammattei.co">giammattei.co</a></h3>
+    </div>
+  </div>
+
+  <hr />
+  <div class="recentblog">
+    <h2>Most Recent Blog Post</h2>
+    <h4><a href="blog.html"> See All</a></h4>
+
+    <article>
+      <header class="blogheader">
+        <h3>Hello, World!</h3>
+      </header>
+
+      <p>
+        In my spare time I started to teach myself computer science, coding, and
+        software development, through a combination of books, online videos, and
+        self-directed projects. What I have been thrilled to discover, after
+        just 6 weeks of study, is that I really enjoy programming, and that many
+        of the skills required for good code – delegation of tasks, focus in a
+        distraction-prone environment, and attacking a problem from multiple
+        angles (to name a few) – are skills that I’ve been actively honing for
+        10 years.
+      </p>
+
+      <h4><a href="helloworld.html">Read More...</a></h4>
+    </article>
+  </div>
+</BaseLayout>
