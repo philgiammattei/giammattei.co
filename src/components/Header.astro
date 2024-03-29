@@ -1,35 +1,22 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../consts";
+import Nav from "./Nav.astro";
 ---
 
 <header>
   <div class="header-container">
     <div class="flex items-center">
       <a href="/"><img src="img/profile.png" alt="Phil Giammattei" /> </a>
-      <a href="/"><h1 class="ml-4">Phil Giammattei</h1></a>
+      <a href="/"><h1 class="ml-4 mb-0">Phil Giammattei</h1></a>
     </div>
-    <a
-      href="javascript: void(0);"
-      class="icon hamburger"
-      onclick="menuToggle()"
-    >
-      <img
-        src="img/hamburger-cream.svg"
-        class="hamburger"
-        alt="hamburger menu icon"
-      />
-    </a>
   </div>
-
   <div class="socialbuttons">
-    <a href="https://www.linkedin.com/in/philgiammattei/">
+    <a href="https://www.linkedin.com/in/philgiammattei/" target="_blank">
       <img src="img/linkedin-logo.png" alt="linkedin: Phil Giammattei" />
     </a>
-    <a href="https://github.com/philgiammattei">
+    <a href="https://github.com/philgiammattei" target="_blank">
       <img src="img/github-logo.png" alt="Github: philgiammattei" />
     </a>
-    <a href="https://wears.tigerpajamas.com/@phil">
+    <a href="https://wears.tigerpajamas.com/@phil" target="_blank">
       <img
         src="img/mastodon-logo.svg"
         alt="Mastodon: @phil@wears.tigerpajamas.com"
@@ -37,14 +24,25 @@ import { SITE_TITLE } from "../consts";
     </a>
   </div>
 </header>
-<nav>
-  <ul>
-    <li><a href="about.html">ABOUT</a></li>
-    <li><a href="projects.html">PROJECTS</a></li>
-    <li><a href="blog.html">BLOG</a></li>
-  </ul>
-</nav>
-<style>
+<Nav />
+<style lang="scss">
+  @import "../styles/_variables.scss";
+  header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 0;
+
+    a {
+      color: $text-color;
+    }
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
   .header-container {
     display: flex;
     width: 100%;
@@ -56,46 +54,5 @@ import { SITE_TITLE } from "../consts";
   img {
     max-width: 100px;
     max-height: 100px;
-  }
-
-  .hamburger {
-    max-width: 100px;
-    display: block;
-    flex: 1;
-  }
-
-  @media (max-width: 500px) {
-    nav {
-      width: 90%;
-      position: absolute;
-      right: 0;
-      text-align: right;
-      padding: 20px 20px 10px 20px;
-      background-image: linear-gradient(
-        to right,
-        #2a1b3d 10%,
-        rgb(126, 102, 163) 50%
-      );
-      border-radius: 0 0 15px 15px;
-      display: none;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      z-index: 2;
-    }
-    nav ul li {
-      list-style: none;
-      margin-bottom: 10px;
-      color: #2a1b3d;
-    }
-
-    nav ul li a:link,
-    nav ul li a:hover,
-    nav ul li a:visited,
-    nav ul li a:active {
-      color: #2a1b3d;
-      font-family: "Muli", sans-serif;
-      font-size: 2em;
-    }
   }
 </style>

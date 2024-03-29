@@ -1,0 +1,50 @@
+---
+
+---
+
+<nav>
+  <ul>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="projects.html">PROJECTS</a></li>
+    <li><a href="blog.html">BLOG</a></li>
+  </ul>
+</nav>
+<style lang="scss">
+  nav {
+    width: 100%;
+    position: relative;
+    top: -30px;
+    text-align: right;
+    padding: 20px;
+    background-image: linear-gradient(
+      to left,
+      rgb(126, 102, 163) 40%,
+      #2a1b3d 90%
+    );
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    z-index: 2;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        display: inline;
+        margin-left: 20px;
+
+        a:link,
+        a:hover,
+        a:visited,
+        a:active {
+          color: #2a1b3d;
+          font-family: "Muli", sans-serif;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+</style>
