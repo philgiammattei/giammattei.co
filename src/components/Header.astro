@@ -5,11 +5,9 @@ import { SITE_TITLE } from "../consts";
 
 <header>
   <div class="header-container">
-    <div class="image-and-header">
-      <a href="index.html"
-        ><img src="img/profile.png" alt="Phil Giammattei" />
-      </a>
-      <h1 class="profile-header">Phil Giammattei</h1>
+    <div class="flex items-center">
+      <a href="/"><img src="img/profile.png" alt="Phil Giammattei" /> </a>
+      <a href="/"><h1 class="ml-4">Phil Giammattei</h1></a>
     </div>
     <a
       href="javascript: void(0);"
@@ -31,25 +29,22 @@ import { SITE_TITLE } from "../consts";
     <a href="https://github.com/philgiammattei">
       <img src="img/github-logo.png" alt="Github: philgiammattei" />
     </a>
-    <a href="https://twitter.com/philgiammattei">
-      <img src="img/twitter-logo.png" alt="twitter @philgiammattei" />
+    <a href="https://wears.tigerpajamas.com/@phil">
+      <img
+        src="img/mastodon-logo.svg"
+        alt="Mastodon: @phil@wears.tigerpajamas.com"
+      />
     </a>
   </div>
 </header>
-<nav id="nav">
-  <ul class="main-nav">
-    <li><a href="index.html">HOME</a></li>
+<nav>
+  <ul>
     <li><a href="about.html">ABOUT</a></li>
     <li><a href="projects.html">PROJECTS</a></li>
     <li><a href="blog.html">BLOG</a></li>
-    <li><a href="Contact.html">CONTACT</a></li>
   </ul>
 </nav>
 <style>
-  .image-and-header {
-    display: flex;
-    align-items: center;
-  }
   .header-container {
     display: flex;
     width: 100%;
@@ -61,16 +56,46 @@ import { SITE_TITLE } from "../consts";
   img {
     max-width: 100px;
     max-height: 100px;
-    display: block;
-  }
-
-  .profile-header {
-    flex: 2;
   }
 
   .hamburger {
     max-width: 100px;
     display: block;
     flex: 1;
+  }
+
+  @media (max-width: 500px) {
+    nav {
+      width: 90%;
+      position: absolute;
+      right: 0;
+      text-align: right;
+      padding: 20px 20px 10px 20px;
+      background-image: linear-gradient(
+        to right,
+        #2a1b3d 10%,
+        rgb(126, 102, 163) 50%
+      );
+      border-radius: 0 0 15px 15px;
+      display: none;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      z-index: 2;
+    }
+    nav ul li {
+      list-style: none;
+      margin-bottom: 10px;
+      color: #2a1b3d;
+    }
+
+    nav ul li a:link,
+    nav ul li a:hover,
+    nav ul li a:visited,
+    nav ul li a:active {
+      color: #2a1b3d;
+      font-family: "Muli", sans-serif;
+      font-size: 2em;
+    }
   }
 </style>
