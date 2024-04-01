@@ -1,5 +1,6 @@
 ---
 title: Now is the Time of Centaurs
+description: On GPTs and Cyborg Chess
 pubDate: 11/16/2023
 heroImage: /img/centaur.png
 ---

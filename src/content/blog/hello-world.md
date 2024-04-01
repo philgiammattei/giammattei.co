@@ -1,5 +1,6 @@
 ---
 title: Hello, World!
+description: On beginnings
 pubDate: 05/19/2019
 heroImage: /img/profile.jpg
 ---
