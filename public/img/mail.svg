@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+	<title>
+		Email
+	</title>
+	<g fill="#fcfbe3">
+		<path d="M2.5 5h25c1.375 0 2.5 1.125 2.5 2.5v15c0 1.375-1.125 2.5-2.5 2.5h-25c-1.375 0-2.5-1.125-2.5-2.5v-15c0-1.375 1.125-2.5 2.5-2.5Zm13.1625 10.8375 11.0875-6.925a1.0625 1.0625 0 1 0-1.125-1.8l-9.9625 6.225-9.9625-6.225a1.0625 1.0625 0 1 0-1.125 1.8l11.0875 6.925c.4.25.925.25 1.325 0Z">
+		</path>
+	</g>
+	<metadata>
+		email, envelop, letter, mail, message, send
+	</metadata>
+</svg>

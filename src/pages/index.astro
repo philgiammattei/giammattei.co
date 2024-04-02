@@ -1,6 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { getCollection } from "astro:content";
+import BlogPost from "../components/BlogPost.astro";
+const posts = await getCollection("blog");
+const mostRecentPost = posts.sort((a, b) => {
+  return b.data.pubDate.getTime() - a.data.pubDate.getTime();
+})[0];
+const { slug } = mostRecentPost;
+const { title, pubDate, updatedDate, heroImage } = mostRecentPost.data;
+const { Content } = await mostRecentPost.render();
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -23,5 +32,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   <hr />
   <div class="recentblog">
     <h2>Most Recent Blog Post</h2>
+    <BlogPost
+      title={title}
+      pubDate={pubDate}
+      updatedDate={updatedDate}
+      heroImage={heroImage}
+      showImage={false}
+      slug={slug}
+    >
+      <Content />
+    </BlogPost>
   </div>
 </BaseLayout>
