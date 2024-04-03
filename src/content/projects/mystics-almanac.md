@@ -1,6 +1,6 @@
 ---
 title: The Mystic's Almanac
-description: "It's long been a dream of mine to have a side business making little projects for people. I like the idea that I can be the means by which someone gets an idea off the ground, for at a price that we can both be happy with. But it's hard to bootstrap; you need clients to get experience, and you need experience to get clients. I've never really tried to make something happen in this area because it seemed like a big effort to get over that particular hump, and I was keeping plenty busy with hobby projects and full-time work.  Thankfully, I was approached by Gabriel Broussard with the perfect opportunity."
+description: It's long been a dream of mine to have a side business making little projects for people.
 pubDate: 06/29/2023
 heroImage: /img/mystics-almanac.jpeg
 featured: true

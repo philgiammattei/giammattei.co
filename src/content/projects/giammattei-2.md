@@ -1,6 +1,6 @@
 ---
 title: giammattei.co, Part Deux
-description: Welcome to the new and improved giammattei.co! While it may look and feel much the same as your last visit (if you were one of the 10 people to visit the site in its first year of existence), under the hood, everything is different. This site is now a single-page Angular app, and I thought it'd be fun to explain why I took the time to take a weed whacker to my code, and what gives the "modern" frameworks that now dominate the web their edge.
+description: While it may look and feel much the same, everything is different.
 pubDate: 08/30/2020
 heroImage: /img/giammattei-2.png
 ---

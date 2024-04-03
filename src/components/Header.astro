@@ -1,9 +1,11 @@
 ---
 import Nav from "./Nav.astro";
+import MobileNav from "./MobileNav.astro";
 import SocialButtons from "./SocialButtons.astro";
 ---
 
-<header>
+<!--desktop header-->
+<header class="desktop-header">
   <div class="header-container">
     <div class="flex items-center">
       <a href="/"><img src="/img/profile.png" alt="Phil Giammattei" /> </a>
@@ -12,10 +14,26 @@ import SocialButtons from "./SocialButtons.astro";
   </div>
   <SocialButtons />
 </header>
+<!--mobile header-->
+<header class="mobile-header">
+  <div class="header-container">
+    <a href="/"><img src="/img/profile.png" alt="Phil Giammattei" /> </a>
+    <img
+      src="/img/hamburger-cream.svg"
+      class="hamburger"
+      alt="hamburger menu icon"
+      onclick="menuToggle()"
+    />
+  </div>
+</header>
 <Nav />
+<MobileNav />
 <style lang="scss">
   @import "../styles/_variables.scss";
-  header {
+  .mobile-header {
+    display: none;
+  }
+  .desktop-header {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -42,5 +60,23 @@ import SocialButtons from "./SocialButtons.astro";
   img {
     max-width: 100px;
     max-height: 100px;
+  }
+  @media (max-width: 768px) {
+    .desktop-header {
+      display: none;
+    }
+    .mobile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+      margin-bottom: 3rem;
+      a {
+        color: $text-color;
+      }
+    }
+    img {
+      cursor: pointer;
+    }
   }
 </style>

@@ -32,7 +32,7 @@ const ConditionalBlogList = ({ allPosts, filteredPosts }) => {
       <ul className="blog-list">
         {posts.map((post) => (
           <li>
-            <a href={`/blog/${post.slug}/`}>
+            <a href={`/${post.collection}/${post.slug}/`}>
               <img src={post.data.heroImage} alt="" />
             </a>
             <div className="flex flex-col items-start">

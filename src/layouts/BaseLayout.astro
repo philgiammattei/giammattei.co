@@ -23,5 +23,19 @@ const { title, description, image = "img/waveform.png" } = Astro.props;
       <slot />
     </main>
     <Footer />
+    <script type="text/javascript">
+      function menuToggle() {
+        var menu = document.getElementById("mobile-nav");
+        const body = document.body;
+
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+          body.classList.remove("no-scroll"); // Enable scrolling
+        } else {
+          menu.style.display = "block";
+          body.classList.add("no-scroll"); //disable scrolling
+        }
+      }
+    </script>
   </body>
 </html>

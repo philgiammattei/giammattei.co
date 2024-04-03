@@ -1,0 +1,68 @@
+---
+import SocialButtons from "./SocialButtons.astro";
+---
+
+<nav id="mobile-nav">
+  <div class="nav-container">
+    <ul>
+      <li><a href="/about">ABOUT</a></li>
+      <li><a href="/projects">PROJECTS</a></li>
+      <li><a href="/blog">BLOG</a></li>
+    </ul>
+    <SocialButtons />
+  </div>
+</nav>
+<style lang="scss">
+  @import "../styles/_variables.scss";
+
+  nav {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+      width: 100%;
+      background-color: $background-color;
+      position: fixed; /* Use fixed position to cover the entire viewport */
+      top: 140px; /* Position right below the header */
+      left: 0;
+      z-index: 10;
+      height: calc(100vh - 140px); /* Take up the remaining height */
+
+      .nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 3rem;
+        padding-bottom: 6rem;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+      }
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      a {
+        display: block;
+        padding: 15px;
+        color: $accent-color;
+        text-decoration: none;
+      }
+    }
+  }
+</style>
