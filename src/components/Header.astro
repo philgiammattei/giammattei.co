@@ -28,6 +28,20 @@ import SocialButtons from "./SocialButtons.astro";
 </header>
 <Nav />
 <MobileNav />
+<script is:inline type="text/javascript">
+  function menuToggle() {
+    var menu = document.getElementById("mobile-nav");
+    const body = document.body;
+
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+      body.classList.remove("no-scroll"); // Enable scrolling
+    } else {
+      menu.style.display = "block";
+      body.classList.add("no-scroll"); //disable scrolling
+    }
+  }
+</script>
 <style lang="scss">
   @import "../styles/_variables.scss";
   .mobile-header {
