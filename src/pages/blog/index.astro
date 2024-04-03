@@ -4,9 +4,19 @@ import FormattedDate from "../../components/FormattedDate.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ConditionalBlogList from "../../components/ConditionalBlogList";
 
-const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const posts = (await getCollection("blog"))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .map((post) => {
+    return {
+      ...post,
+      data: {
+        ...post.data,
+        heroImage: post.data.heroImage
+          ? post.data.heroImage
+          : "/img/waveform.svg",
+      },
+    };
+  });
 
 const projectPosts = (await getCollection("projects")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
