@@ -131,9 +131,8 @@ ul.blog-list {
       border-radius: 1rem;
     }
     .date {
-
+      color: $secondary-accent-color;
       line-height: 1rem;
-
       margin: 0;
       
       time {
@@ -164,6 +163,10 @@ ul.blog-list {
         max-width: 500px;
         max-height: 500px;
         margin: 0;
+      }
+
+      p {
+        text-align: left;
       }
     }
   }

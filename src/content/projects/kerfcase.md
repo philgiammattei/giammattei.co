@@ -1,6 +1,6 @@
 ---
 title: KerfCase
-description: A full UI overhaul of a high-converting luxury Shopify site
+description: A full UI overhaul of a high-converting luxury Shopify site.
 pubDate: 09/01/2019
 heroImage: /img/kerfcase-cover.png
 featured: true

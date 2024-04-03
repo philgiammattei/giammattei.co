@@ -1,6 +1,6 @@
 ---
 title: giammattei.co, Part 3
-description: The Next chapter begins
+description: The Next chapter begins.
 pubDate: 06/16/2023
 heroImage: /img/giammattei-3.png
 ---
