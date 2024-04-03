@@ -1,5 +1,6 @@
 ---
 title: Book of Changes
+description: A full-stack application to automate the process of generating and interpreting a reading from the YiJing, an ancient Chinese divination system.
 pubDate: 03/14/2022
 heroImage: /img/book-of-changes.png
 ---

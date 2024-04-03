@@ -1,5 +1,6 @@
 ---
 title: giammattei.co
+description: It was evident from the start that if I wanted to be a web developer, the best way to do that would be to make a website.
 pubDate: 08/07/2019
 heroImage: /img/giammattei-co-cover.png
 ---

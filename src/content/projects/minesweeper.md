@@ -1,7 +1,9 @@
 ---
 title: Minesweeper
+description: "This would be a huge challenge, but many design pieces fell into place when an idea hit me: could I mash up Minesweeper and Minecraft?"
 pubDate: 09/28/2019
 heroImage: /img/minesweeper-cover.png
+featured: true
 ---
 
 # [Play Minesweeper](https://mine-craft-sweeper.netlify.app/)

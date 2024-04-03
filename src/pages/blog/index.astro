@@ -12,6 +12,7 @@ const posts = (await getCollection("blog")).sort(
   title="Blog"
   description="All of my posts, including my project posts if you really want them!"
 >
+  <h2>Blog</h2>
   <section>
     <ul>
       {
@@ -29,6 +30,7 @@ const posts = (await getCollection("blog")).sort(
       }
     </ul>
   </section>
+
   <style>
     ul {
       display: flex;

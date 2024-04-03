@@ -1,5 +1,6 @@
 ---
 title: Dicematch
+description: An Angular SPA to generate a random game of Dice Throne. Users can name their players, configure teams, and set the pool of playable classes.
 pubDate: 02/06/2020
 heroImage: /img/dicematch.png
 ---

@@ -1,5 +1,6 @@
 ---
 title: Dijkstra's Cart
+description: Dijkstra's Algorithm helps you find the shortest path through a graph. Dijkstra's Cart is an automagic shopping list to help you chart the most efficient route through your neighborhood grocery store.
 pubDate: 12/15/2019
 heroImage: /img/dijkstrascart.png
 ---

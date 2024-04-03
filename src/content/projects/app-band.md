@@ -1,5 +1,6 @@
 ---
 title: I'm Writing an App For My Band
+description: In the Year Of Our Lord 2020, if you’re attempting to maintain positive cash flow, “I’m in a band” means “I am a cofounder and partner in a content-based ecommerce company, with an aggressive schedule of pop-up stores accompanying exclusive networking events.” There’s a reason the classic rock n’ roll dream starts with an agent discovering the act and signing them to a deal; in this ideal fantasy, other people take care of the business stuff, leaving you to the shredding. Every successful musician has to learn one day that that infrastructure doesn’t really exist anymore, and if you want the job done right, you have to do it yourself.
 pubDate: 04/18/2020
 heroImage: /img/badcusteriphoneapp.png
 ---

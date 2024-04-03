@@ -1,8 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
+import Projects from "../components/Projects.astro";
+
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
-import BlogPost from "../components/BlogPost.astro";
+
 const posts = await getCollection("blog");
 const mostRecentPost = posts.sort((a, b) => {
   return b.data.pubDate.getTime() - a.data.pubDate.getTime();
@@ -10,12 +13,18 @@ const mostRecentPost = posts.sort((a, b) => {
 const { slug } = mostRecentPost;
 const { title, pubDate, updatedDate, heroImage } = mostRecentPost.data;
 const { Content } = await mostRecentPost.render();
+
+const projects = await getCollection("projects", ({ data }) => {
+  return data.featured;
+});
+const featuredProjects = projects.sort((a, b) => {
+  return b.data.pubDate.getTime() - a.data.pubDate.getTime();
+});
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <div class="intro">
     <h2>Hi there! I'm <em>Phil.</em></h2>
-    <hr />
     <h3>
       I'm a versatile and curious software engineer, and I make <a
         href="https://tigerpajamas.com"
@@ -26,8 +35,11 @@ const { Content } = await mostRecentPost.render();
       <button type="button" class="m-10">Let's talk.</button></a
     >
   </div>
+  <hr class="mt-7" />
 
-  <h2>Projects:</h2>
+  <h2 class="mb-0">Featured Projects:</h2>
+  <Projects projects={featuredProjects} />
+  <a href="/projects"><h2 class="center">All Projects</h2></a>
 
   <hr />
   <div class="recentblog">
@@ -42,5 +54,6 @@ const { Content } = await mostRecentPost.render();
     >
       <Content />
     </BlogPost>
+    <a href="/blog"><h2 class="center">All Blog Posts</h2></a>
   </div>
 </BaseLayout>

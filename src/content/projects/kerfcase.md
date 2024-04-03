@@ -1,7 +1,9 @@
 ---
 title: KerfCase
+description: A full UI overhaul of a high-converting luxury Shopify site
 pubDate: 09/01/2019
 heroImage: /img/kerfcase-cover.png
+featured: true
 ---
 
 I've been an employee of [KerfCase LLC](https://kerfcase.com) since October of 2016\. Working at a combination specialty wood shop and ecommerce company is a great way to pick up a lot of different skills, and during my time there I have learned a lot about small-batch production, online marketing, and how a small business functions.

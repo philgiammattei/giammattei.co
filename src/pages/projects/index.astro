@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+import Projects from "../../components/Projects.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const projects = (await getCollection("projects")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<BaseLayout title="Projects" description="All of my projects">
+  <h1>Projects</h1>
+  <Projects projects={projects} /></BaseLayout
+>
