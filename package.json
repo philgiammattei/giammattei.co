@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "npx tinacms dev -c 'astro dev'",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
@@ -19,9 +19,12 @@
     "markdown-it": "^14.1.0",
     "preact": "^10.20.1",
     "sanitize-html": "^2.13.0",
+    "tinacms": "^1.6.1",
     "typescript": "^5.4.3"
   },
   "devDependencies": {
+    "@tinacms/cli": "^1.5.43",
+    "@types/node": "^20.12.4",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "sass": "^1.72.0",
