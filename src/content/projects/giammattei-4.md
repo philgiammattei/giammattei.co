@@ -3,6 +3,7 @@ title: giammattei.co, Part 4
 description: Blast off.
 pubDate: 04/05/2024
 heroImage: /img/waveform.png
+featured: true
 ---
 
 I've joked before that I don't write on this site enough, and that I love to remake the entire website on a new framework, so about half the posts on giammattei.co are me talking about how I completely remade giammattei.co. In that proud tradition, I welcome you to the FOURTH iteration of giammattei.co.

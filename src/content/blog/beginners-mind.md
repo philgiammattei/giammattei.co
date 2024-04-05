@@ -1,7 +1,7 @@
 ---
 title: Beginner's Mind
 description: I miss when I didn't know how it all works.
-pubDate: 04/05/2023
+pubDate: 04/05/2024
 heroImage: img/chop-wood.jpeg
 ---
 
