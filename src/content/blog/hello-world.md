@@ -3,6 +3,7 @@ title: Hello, World!
 description: On beginnings
 pubDate: 05/19/2019
 heroImage: /img/profile.jpg
+published: true
 ---
 
 I've written the "Your First Program" program a few times now, and in a few different languages. Whether you \*include your stdio, or get right to the System.out.print()ing, it usually doesn't take long for a working program in a given language to be checked off your list. The hard part comes later, and can be very overwhelming.

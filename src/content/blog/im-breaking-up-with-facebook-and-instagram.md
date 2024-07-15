@@ -2,6 +2,7 @@
 title: I’m Breaking Up With Facebook and Instagram
 description: After twenty years, I'm done with algorithms.
 pubDate: 05/23/2024
+published: true
 ---
 
 _TLDR: I’m no longer going to be looking at my Facebook and Instagram pages, though I might still publish to them periodically for self-promotion purposes. Email me at [phil@giammattei.co](mailto:phil@giammattei.co) to stay in touch!_

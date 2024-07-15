@@ -2,6 +2,7 @@
 title: On the Eve of a Learning Journey
 description: Diving into the Apple developer ecosystem, again
 pubDate: 06/20/2023
+published: true
 ---
 
 Every few years I get the notion that I should learn how to make iOS apps. It's an incredible platform, the users are everywhere, and I love the idea of making software that goes in my pocket. I'm also a big-time Apple user, and was blown away by the new [Vision Pro](https://www.apple.com/apple-vision-pro/) and all the possibilities for immersive apps on a new platform, so the call is very strong right now to add this skill to my toolbox and make something cool.

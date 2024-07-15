@@ -65,6 +65,12 @@ export default defineConfig({
             required: false,
           },
           {
+            type: "boolean",
+            label: "Published",
+            name: "published",
+            description: "Whether this post should be publicly visible.",
+          },
+          {
             type: "rich-text",
             name: "body",
             label: "Body",

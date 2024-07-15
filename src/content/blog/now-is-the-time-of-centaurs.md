@@ -3,6 +3,7 @@ title: Now is the Time of Centaurs
 description: On GPTs and Cyborg Chess
 pubDate: 11/16/2023
 heroImage: /img/centaur.png
+published: true
 ---
 
 I first heard about GPT-4 when I was watching my 2-year-old toddle around a playground at the mall, and at the time it felt apocalyptic. I was unemployed, having been caught in one of those "20% of the company" layoffs that are so in vogue this year, and as my primary cost center was climbing the ladder for another go at the slide, I was trying to figure out how to get myself back on my feet.

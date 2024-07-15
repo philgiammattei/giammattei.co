@@ -2,6 +2,7 @@
 title: Beginner's Mind
 description: I miss when I didn't know how it all works.
 pubDate: 04/05/2024
+published: true
 ---
 
 One of the more famous Zen quotes comes from [Shunryu Suzuki](https://en.wikipedia.org/wiki/Zen_Mind,_Beginner%27s_Mind), an influential teacher who helped Zen explode in popularity in the United States in the 20th century. It goes like this:

@@ -2,6 +2,7 @@
 title: Fizzbuzz in Swift
 description: Tuples!
 pubDate: 06/30/2023
+published: true
 ---
 
 I'm deep in my Swift education (I opted to read the [Big Nerd Ranch book](https://bignerdranch.com/books/swift-programming-the-big-nerd-ranch-guide-3rd-edition/) before getting into SwiftUI exclusively) and I'm trying to get the fundamentals grasped quickly so I can start building something, but I couldn't help but share this tidbit.
