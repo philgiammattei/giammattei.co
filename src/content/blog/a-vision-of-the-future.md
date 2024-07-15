@@ -3,6 +3,7 @@ title: A Vision of the Future
 description: Day 1 of realityOS
 pubDate: 06/22/2023
 heroImage: /img/a-vision-of-the-future.jpg
+published: false
 ---
 
 Though it was two weeks ago that Apple announced their [Vision Pro](https://www.apple.com/apple-vision-pro/) to the world, yesterday felt even more significant for Apple developers. Until then, we only had a brief glance at the new product, through marketing videos, technical talks, and secondhand accounts of brief demos. But yesterday, people finally started to get their hands on it. Not the hardware; the actual headset is not set to hit shelves until next year. But Apple updated XCode to support a [virtual build of VisionOS](https://www.apple.com/newsroom/2023/06/developer-tools-to-create-spatial-experiences-for-apple-vision-pro-now-available/), and a simulator to approximate the experience of using VisionOS in the home.
