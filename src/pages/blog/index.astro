@@ -4,6 +4,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ConditionalBlogList from "../../components/ConditionalBlogList";
 
 const posts = (await getCollection("blog"))
+  .filter((post) => post.data.published)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .map((post) => {
     return {

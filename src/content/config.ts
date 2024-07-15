@@ -10,6 +10,7 @@ const blog = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
+    published: z.boolean().optional(),
   }),
 });
 
@@ -24,7 +25,6 @@ const projects = defineCollection({
     updatedDate: z.coerce.date().optional(),
     heroImage: z.string(),
     featured: z.boolean().optional(),
-    published: z.boolean().optional(),
   }),
 });
 
