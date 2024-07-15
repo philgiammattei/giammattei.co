@@ -2,7 +2,7 @@
 title: 6 Months with Apple Vision Pro
 description: My thoughts on Apple's most controversial device after half a year of use.
 pubDate: 2024-07-16T04:00:00.000Z
-heroImage: /img/IMG_4417.jpeg
+heroImage: /img/vision-pro.png
 ---
 
 At the beginning of August, the Vision Pro will have been with us for half a year.  It's a bizarre and polarizing device, and has sold in so little numbers that few people have even seen it, let alone had time to try it for themselves.  I have owned the Vision Pro since it launched, and have put enough time in, and made enough modifications to it, that I feel like I can speak to where it fits into my life.
