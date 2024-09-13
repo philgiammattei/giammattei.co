@@ -1,7 +1,7 @@
 ---
 title: A Vision of the Future
 description: Day 1 of realityOS
-pubDate: 06/22/2023
+pubDate: '2023-06-22T00:00:00-04:00'
 heroImage: /img/a-vision-of-the-future.jpg
 published: true
 ---

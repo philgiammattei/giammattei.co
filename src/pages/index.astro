@@ -7,9 +7,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
 
 const posts = await getCollection("blog");
-const mostRecentPost = posts.sort((a, b) => {
-  return b.data.pubDate.getTime() - a.data.pubDate.getTime();
-})[0];
+const mostRecentPost = posts
+  .filter((post) => post.data.published)
+  .sort((a, b) => {
+    return b.data.pubDate.getTime() - a.data.pubDate.getTime();
+  })[0];
 const { slug } = mostRecentPost;
 const { title, pubDate, updatedDate, heroImage } = mostRecentPost.data;
 const { Content } = await mostRecentPost.render();

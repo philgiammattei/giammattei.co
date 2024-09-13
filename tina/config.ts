@@ -53,6 +53,16 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "boolean",
+            label: "Schedule Post to Publish Automatically",
+            name: "scheduled",
+            ui: {
+              component: "checkbox",
+            },
+            description:
+              "When a post is ready, check this box and the post will publish at midnight on the date specified.  The 'Published' field will automatically toggle to 'true'.",
+          },
+          {
             type: "datetime",
             name: "updatedDate",
             label: "Date Updated",
@@ -68,7 +78,8 @@ export default defineConfig({
             type: "boolean",
             label: "Published",
             name: "published",
-            description: "Whether this post should be publicly visible.",
+            description:
+              "Whether this post should be publicly visible.  If you would like a post to schedule at a future date, leave this toggle off and use the control above to schedule the post to automatically publish.",
           },
           {
             type: "rich-text",
