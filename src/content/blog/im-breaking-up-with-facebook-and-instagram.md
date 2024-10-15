@@ -1,11 +1,12 @@
 ---
 title: I’m Breaking Up With Facebook and Instagram
-description: After twenty years, I'm done with algorithms.
-pubDate: 05/23/2024
+description: 'After twenty years, I''m done with algorithms.'
+pubDate: 2024-05-23T00:00:00.000Z
+updatedDate: 2024-10-15T04:00:00.000Z
 published: true
 ---
 
-_TLDR: I’m no longer going to be looking at my Facebook and Instagram pages, though I might still publish to them periodically for self-promotion purposes. Email me at [phil@giammattei.co](mailto:phil@giammattei.co) to stay in touch!_
+*TLDR: I’m no longer going to be looking at my Facebook and Instagram pages, though I might still publish to them periodically for self-promotion purposes. Email me at [phil@giammattei.co](mailto:phil@giammattei.co) to stay in touch!*
 
 ## TikTok’s Divorce Algorithm
 
@@ -44,3 +45,7 @@ I don’t think I could make this decision without a home base on the web, and I
 (If your reaction to this post is “God, Phil is being real self-obsessed and navel-gazey here”, my response is “yeah! When you have your own blog you can do that! It rocks!!”)
 
 I’ve already noticed a different speed when not spending all of my time on Facebook (and Twitter, and Reddit, and LinkedIn, and...). It takes a bit for the dopamine receptors to adjust. But I’m left with essays and roundups and links and emails and texts that are all mediated 100% by human beings that I like to hear from, and I gotta say, it’s very nice.
+
+*Update 10/15/24:*
+
+*Unfortunately, I wasn't able to make as much of a break with Meta Platforms Inc. as I had originally hoped.  I still am using Facebook and Instagram to promote my band, keep up with my kid's preschool, and check in on how people are doing with big weather events and the like.  I really wish I could be done with them entirely, but those two platforms are where the people are, and I don't want my purism to keep me out of the loop.  That being said, my relationship to these two platforms are very different than they were just a few years ago.  I'm very careful with my time on places with bottomless content algorithms, but my home feeds on Facebook and Instagram (and LinkedIn!) are so boring that I bounce off of them after just a minute or two.*
