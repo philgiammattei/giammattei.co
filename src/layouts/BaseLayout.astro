@@ -16,7 +16,19 @@ const { title, description, image = "/img/waveform.png" } = Astro.props;
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} image={image} />
-  </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEKGM0CJGD"
+    ></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KEKGM0CJGD");
+    </script></head
+  >
+  <!-- Google tag (gtag.js) -->
+
   <body>
     <Header />
     <main>
