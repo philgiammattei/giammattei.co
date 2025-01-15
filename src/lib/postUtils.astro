@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+
+export async function getBlogPosts() {
+  return (await getCollection("blog"))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .filter((post) => post.data.published);
+}
+
+export async function getProjects() {
+  return (await getCollection("projects")).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  );
+}
+
+export async function getAllPosts() {
+  const blogPosts = await getBlogPosts();
+  const projectPosts = await getProjects();
+  return [...blogPosts, ...projectPosts].sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  );
+}
+
+export function getPostData(post: any) {
+  return {
+    slug: `/${post.collection}/${post.slug}`,
+    title: post.data.title,
+  };
+}
+---

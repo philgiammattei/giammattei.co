@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = 'Phil Giammattei';
 export const SITE_DESCRIPTION = 'A blog and portfolio for Phil Giammattei, a web site maker and software engineer based in Pittsburgh, PA.';
+export const BASE_URL = 'https://giammattei.co';
