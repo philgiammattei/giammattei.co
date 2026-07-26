@@ -30,8 +30,7 @@
     "@tinacms/cli": "^1.5.43",
     "@types/node": "^22.0.0",
     "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
-    "sass": "^1.72.0"
+    "postcss": "^8.4.38"
   },
   "overrides": {
     "better-sqlite3": "^11.5.0"
