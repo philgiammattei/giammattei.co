@@ -16,7 +16,7 @@ Thankfully, I was able to find the exact moment where, in a Signal chat in late 
 
 ![](</img/Screenshot 2026-07-18 at 2.04.45 PM.png>)![](</img/Screenshot 2026-07-18 at 2.05.03 PM.png>)
 
-The plan formed instantly: Jon would handle the business side, Ash would do the design, I would own the engineering. We took to iMessage to figure out our brand, our values, and our pitch, which ended up being something like “We are all busy working and being parents to young children, we are probably still in our pajamas, and we want to make you something special in our spare time.  It will be good and it will be matched to your personality and aesthetics.”  While domain shopping for various potential names, I scored a hit:
+The plan formed instantly: Jon would bring a product vision honed from decades of experience making and using sites, Ash would create a design process that matched the vibes of the site to each individual client, I would turn all of that into code. We took to iMessage to figure out our brand, our values, and our pitch, which ended up being something like “We are all busy working and being parents to young children, we are probably still in our pajamas, and we want to make you something special in our spare time.  It will be good and it will be matched to your personality and aesthetics.”  While domain shopping for various potential names, I scored a hit:
 
 ![](</img/Screenshot 2026-07-18 at 2.32.14 PM.png>)
 
