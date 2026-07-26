@@ -205,6 +205,10 @@ ul.blog-list li .date time {
   display: inline-block;
 }
 
+.jingle {
+    margin: 3rem 0;
+}
+
 .flex {
   display: flex;
 }
